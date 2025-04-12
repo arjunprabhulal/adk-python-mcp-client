@@ -6,38 +6,38 @@ A practical implementation demonstrating ADK (Agent Development Kit) as an MCP (
 
 ## 📚 Table of Contents
 
-* Introduction to ADK and MCP
-* Architecture
-  * Core Components
-  * Technology Highlights
-* Features
-* Core Concepts
-  * ADK - Agent Development Kit
-  * Agents in ADK
-  * Tools in ADK
-  * MCP Client Integration
-* Implementation Steps
-  * Prerequisites
-  * Step 1: Setup Environment
-  * Step 2: Install MCP Server
-  * Step 3: Connecting to MCP Server
-  * Step 4: Agent Creation
-  * Step 5: Integration and Session Management
-  * Step 6: Execution
-  * Step 7: Demo
-* Getting Started Guide
-  * Installation Steps
-  * Environment Setup
-  * Configuration
-  * Start Services
-* Project Structure
-* Key Considerations for Integration
-* Troubleshooting
-* Official Documentation References
-* Repository
-* Author
+* [Introduction to ADK and MCP](#introduction-to-adk-and-mcp)
+* [Architecture](#architecture)
+  * [Core Components](#core-components)
+  * [Technology Highlights](#technology-highlights)
+* [Features](#features)
+* [Core Concepts](#core-concepts)
+  * [ADK - Agent Development Kit](#adk---agent-development-kit)
+  * [Agents in ADK](#agents-in-adk)
+  * [Tools in ADK](#tools-in-adk)
+  * [MCP Client Integration](#mcp-client-integration)
+* [Implementation Steps](#implementation-steps)
+  * [Prerequisites](#prerequisites)
+  * [Step 1: Setup Environment](#step-1-setup-environment)
+  * [Step 2: Install MCP Server](#step-2-install-mcp-server)
+  * [Step 3: Connecting to MCP Server](#step-3-connecting-to-mcp-server)
+  * [Step 4: Agent Creation](#step-4-agent-creation)
+  * [Step 5: Integration and Session Management](#step-5-integration-and-session-management)
+  * [Step 6: Execution](#step-6-execution)
+  * [Step 7: Demo](#step-7-demo)
+* [Getting Started Guide](#getting-started-guide)
+  * [Installation Steps](#installation-steps)
+  * [Environment Setup](#environment-setup)
+  * [Configuration](#configuration)
+  * [Start Services](#start-services)
+* [Project Structure](#project-structure)
+* [Key Considerations for Integration](#key-considerations-for-integration)
+* [Troubleshooting](#troubleshooting)
+* [Official Documentation References](#official-documentation-references)
+* [Repository](#repository)
+* [Author](#author)
 
-## Introduction to ADK and MCP
+## 🔍 Introduction to ADK and MCP
 
 This project showcases the integration of two powerful Google technologies:
 - **Agent Development Kit (ADK)**: An open-source, code-first Python toolkit for building intelligent AI agents
@@ -45,13 +45,13 @@ This project showcases the integration of two powerful Google technologies:
 
 In this implementation, ADK acts as the MCP Client, connecting to an MCP Server that provides flight search capabilities.
 
-## Architecture
+## 🏗️ Architecture
 
 The Flight Search Assistant follows a streamlined request flow that combines the power of Google Gemini, ADK, and MCP to process user queries and provide intelligent responses.
 
-![Architecture Diagram](Images/image.png)
+![Architecture Diagram](./Images/image.png)
 
-### Core Components 
+### 🧩 Core Components 
 
 - **Google Gemini 2 as LLM**
 - **Agent Development Kit (ADK) as Agent**
@@ -59,7 +59,7 @@ The Flight Search Assistant follows a streamlined request flow that combines the
 - **SerpAPI for Search**
 - **Python 3.8+**
 
-### Technology Highlights
+### ✨ Technology Highlights
 
 * **Google Gemini 2**  
 Powers conversational AI and context-aware interactions.
@@ -70,7 +70,7 @@ Handles secure tool operations and external API calls.
 * **SerpAPI**  
 Provides access to real-time flight data.
 
-## Features
+## 🚀 Features
 
 * **ADK as MCP Client Integration** - Seamless connection between ADK agent and MCP server using `MCPToolset`
 * **Dynamic Tool Discovery** - Automatic detection and integration of MCP server capabilities
@@ -79,7 +79,7 @@ Provides access to real-time flight data.
 * **Structured Tool Invocation** - Type-safe function calling through MCP protocol
 * **Clean Resource Management** - Proper connection lifecycle handling with exit stacks
 
-## Core Concepts
+## 🧠 Core Concepts
 
 ### ADK - Agent Development Kit
 
@@ -142,7 +142,7 @@ ADK supports several types of tools:
 
 In this project, ADK serves as an MCP Client that connects to an MCP Server (`mcp-flight-search`). This connection allows the ADK agent to discover and use tools exposed by the MCP server to search for flights.
 
-## Implementation Steps
+## 🛠️ Implementation Steps
 
 ### Prerequisites
 
@@ -280,13 +280,13 @@ Here's a demonstration of the flight search assistant in action:
 
 #### Standard Logging Mode
 
-![Standard Logging Demo](Images/adk-mcp-client-log.gif)
+![Standard Logging Demo](./Images/adk-mcp-client-log.gif)
 
 #### Debug Mode
 
-![Debug Mode Demo](Images/adk-mcp-client-debug.gif)
+![Debug Mode Demo](./Images/adk-mcp-client-debug.gif)
 
-## Getting Started Guide
+## 🚦 Getting Started Guide
 
 ### Installation Steps
 
@@ -338,7 +338,7 @@ The application will:
 3. Process the default flight query or your custom query
 4. Display the conversation events and final results
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 adk-python-mcp-client/
@@ -353,7 +353,7 @@ adk-python-mcp-client/
 └── .env                            # Environment variables (not tracked by Git)
 ```
 
-## Key Considerations for Integration
+## 🔄 Key Considerations for Integration
 
 1. **MCP vs. ADK**
    * **MCP** is an open protocol that standardizes how AI models interact with external tools and data sources
@@ -381,7 +381,7 @@ adk-python-mcp-client/
    * MCPToolset manages the lifecycle of MCP connections within ADK
    * Using an exit_stack ensures connections are properly terminated when execution completes
 
-## Troubleshooting
+## ⚠️ Troubleshooting
 
 1. **API Key Issues**: 
    - ADK expects `GOOGLE_API_KEY` instead of `GEMINI_API_KEY`
@@ -400,7 +400,7 @@ adk-python-mcp-client/
    - You may occasionally see 500 internal server errors from the Gemini API
    - These can often be resolved by retrying the request after a short delay
 
-## Official Documentation References
+## 📚 Official Documentation References
 
 For more detailed information about ADK and MCP, refer to the official documentation:
 
@@ -410,10 +410,10 @@ For more detailed information about ADK and MCP, refer to the official documenta
   
 - [MCP Tools with ADK](https://google.github.io/adk-docs/tools/mcp-tools/#1-using-mcp-servers-with-adk-agents-adk-as-an-mcp-client) - Specific guidance on using ADK as an MCP client to connect to MCP servers.
 
-## Repository
+## 📦 Repository
 
 This project is available on GitHub at [arjunprabhulal/adk-python-mcp-client](https://github.com/arjunprabhulal/adk-python-mcp-client).
 
-## Author
+## 👨‍💻 Author
 
 Created by Arjun Prabhulal. For more articles on AI/ML and Generative AI, follow [Arjun Prabhulal](https://medium.com/@arjunprabhulal) on Medium.
