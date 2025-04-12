@@ -1,0 +1,8 @@
+# Core dependencies
+google-adk
+google-genai
+python-dotenv
+
+# MCP server
+mcp-flight-search
+
