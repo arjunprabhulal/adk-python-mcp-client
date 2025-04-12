@@ -6,17 +6,17 @@ A practical implementation demonstrating ADK (Agent Development Kit) as an MCP (
 
 ## 📚 Table of Contents
 
-* [Introduction to ADK and MCP](#introduction-to-adk-and-mcp)
-* [Architecture](#architecture)
-  * [Core Components](#core-components)
-  * [Technology Highlights](#technology-highlights)
-* [Features](#features)
-* [Core Concepts](#core-concepts)
+* [Introduction to ADK and MCP](#-introduction-to-adk-and-mcp)
+* [Architecture](#-architecture)
+  * [Core Components](#-core-components)
+  * [Technology Highlights](#-technology-highlights)
+* [Features](#-features)
+* [Core Concepts](#-core-concepts)
   * [ADK - Agent Development Kit](#adk---agent-development-kit)
   * [Agents in ADK](#agents-in-adk)
   * [Tools in ADK](#tools-in-adk)
   * [MCP Client Integration](#mcp-client-integration)
-* [Implementation Steps](#implementation-steps)
+* [Implementation Steps](#-implementation-steps)
   * [Prerequisites](#prerequisites)
   * [Step 1: Setup Environment](#step-1-setup-environment)
   * [Step 2: Install MCP Server](#step-2-install-mcp-server)
@@ -25,17 +25,17 @@ A practical implementation demonstrating ADK (Agent Development Kit) as an MCP (
   * [Step 5: Integration and Session Management](#step-5-integration-and-session-management)
   * [Step 6: Execution](#step-6-execution)
   * [Step 7: Demo](#step-7-demo)
-* [Getting Started Guide](#getting-started-guide)
+* [Getting Started Guide](#-getting-started-guide)
   * [Installation Steps](#installation-steps)
   * [Environment Setup](#environment-setup)
   * [Configuration](#configuration)
   * [Start Services](#start-services)
-* [Project Structure](#project-structure)
-* [Key Considerations for Integration](#key-considerations-for-integration)
-* [Troubleshooting](#troubleshooting)
-* [Official Documentation References](#official-documentation-references)
-* [Repository](#repository)
-* [Author](#author)
+* [Project Structure](#-project-structure)
+* [Key Considerations for Integration](#-key-considerations-for-integration)
+* [Troubleshooting](#-troubleshooting)
+* [Official Documentation References](#-official-documentation-references)
+* [Repository](#-repository)
+* [Author](#-author)
 
 ## 🔍 Introduction to ADK and MCP
 
@@ -416,4 +416,4 @@ This project is available on GitHub at [arjunprabhulal/adk-python-mcp-client](ht
 
 ## 👨‍💻 Author
 
-Created by Arjun Prabhulal. For more articles on AI/ML and Generative AI, follow [Arjun Prabhulal](https://medium.com/@arjunprabhulal) on Medium.
+Created by Arjun Prabhulal. For more articles on AI/ML and Generative AI, follow [Arjun Prabhulal](https://arjun-prabhulal.medium.com/) on Medium.
