@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/arjunprabhulal-adk-python-mcp-client-badge.png)](https://mseep.ai/app/arjunprabhulal-adk-python-mcp-client)
+
 # Python ADK as MCP Client using Gemini 2 LLM as flight search assistant
 
 Python ADK + MCP Gemini
